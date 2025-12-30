@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<title>Active Elections</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: "Segoe UI", Arial, sans-serif;
+            background: #eef2f7;
+        }
+
+        /* Header banner */
+        .header-banner {
+            background: linear-gradient(to right, #305fbf, #4a80ff);
+            color: white;
+            padding: 20px;
+            text-align: center;
+            font-size: 26px;
+            font-weight: bold;
+            letter-spacing: 1px;
+            box-shadow: 0 3px 8px rgba(0,0,0,0.15);
+        }
+
+        /* Container */
+        .container {
+            max-width: 900px;
+            margin: 40px auto;
+            padding: 0 20px;
+        }
+
+        .page-title {
+            background: #ffffff;
+            color: #305fbf;
+            padding: 18px 20px;
+            font-size: 22px;
+            font-weight: bold;
+            border-radius: 10px;
+            text-align: center;
+            box-shadow: 0 3px 6px rgba(0,0,0,0.1);
+        }
+
+        /* Election Cards */
+        .elections {
+            margin-top: 25px;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+            gap: 20px;
+        }
+
+        .card {
+            background: white;
+            padding: 20px;
+            border-radius: 12px;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.10);
+            transition: 0.25s ease;
+            text-align: center;
+            text-decoration: none;
+            color: inherit;
+            cursor: pointer;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 6px 16px rgba(0,0,0,0.15);
+        }
+
+        .card h3 {
+            margin: 0 0 10px;
+            font-size: 20px;
+            color: #305fbf;
+        }
+
+        .card p {
+            margin: 0;
+            color: #555;
+            font-size: 14px;
+            line-height: 1.4;
+        }
+
+
+        .back-btn {
+            display: inline-block;
+            margin-top: 30px;
+            padding: 12px 22px;
+            background: #d9534f;
+            color: white;
+            border-radius: 6px;
+            text-decoration: none;
+            font-size: 16px;
+            transition: 0.3s;
+        }
+
+        .back-btn:hover {
+            background: #b7322e;
+        }
+    </style>
+</head>
+<body>
+
+<div class="header-banner">Online Student Election System</div>
+
+<div class="container">
+
+    <div class="page-title">Active Elections</div>
+
+    <div class="elections">
+        <a href="voter_vote.html" class="card">
+            <h3>Campus Council 2025</h3>
+            <p>Participate in the upcoming campus council election and cast your vote securely online.</p>
+        </a>
+        <!-- Add more cards for other elections if needed -->
+    </div>
+
+    <a href="voter_dashboard.html" class="back-btn">Back to Dashboard</a>
+
+</div>
+
+</body>
+</html>
